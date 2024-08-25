@@ -2,7 +2,9 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: ['https://bajaj-fh-challege.vercel.app', 'http://localhost:3000']
+  }));
 app.use(express.json());
 
 // POST endpoint
