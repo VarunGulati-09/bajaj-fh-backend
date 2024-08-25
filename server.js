@@ -2,10 +2,15 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-const corsOptions = {
-    origin: '*', // Allow all origins
-};
-app.use(cors(corsOptions));
+
+
+app.use(cors({
+    origin: '*', // allow requests from all origins
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // allow these methods
+    headers: ['Content-Type', 'Authorization'] // allow these headers
+}));
+
+// your API routes here
 app.use(express.json());
 
 // POST endpoint
