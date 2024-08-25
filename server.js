@@ -21,8 +21,8 @@ app.post('/bfhl', (req, res) => {
 
   const response = {
     is_success: true,
-    user_id: "varun03", // Replace with your user ID
-    email: "varunharish.gulati2021@vit.student.ac.in", // Replace with your email
+    user_id: "Varun2003", // Replace with your user ID
+    email: "jvarunharish.gulati2021@vit.student.ac.in", // Replace with your email
     roll_number: "21BCE2979", // Replace with your roll number
     numbers,
     alphabets,
